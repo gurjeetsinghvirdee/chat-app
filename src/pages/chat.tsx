@@ -1,6 +1,6 @@
 import React from 'react';
-import ChatWindow from '../components/ChatWindow';
 import MessageInput from '../components/MessageInput';
+import ChatWindow from '../components/ChatWindows';
 
 const Chat = () => {
     return (
