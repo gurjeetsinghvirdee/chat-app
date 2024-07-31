@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chat Application with Real-Time Messaging
 
-## Getting Started
+This project is a full-featured chat application built using Node.js, Express.js, and Mongoose, with a modern front-end developed in Next.js and TypeScript. It leverages WebSocket (Socket.io) for real-time communication and MongoDB for data persistence.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **User Authentication:**
+  - Secure registration and login using JWT (JSON Web Tokens).
+  - Passwords are encrypted with bcrypt for added security.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Real-Time Messaging:**
+  - Private chat rooms for user-expert pairs.
+  - Real-time message exchange using WebSocket (Socket.io).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Database Integration:**
+  - MongoDB is used for storing user data, chat messages, and expert availability.
+  - The last 10 messages are retrieved when a user joins a chat room.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **User Interface:**
+  - Simple and clean design built with Next.js and Tailwind CSS.
+  - Intuitive interface for logging in, requesting connections, and chatting with experts.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Backend:**
+  - Node.js
+  - Express.js
+  - Mongoose (for MongoDB integration)
+  - Socket.io (for real-time communication)
+  - JWT (for user authentication)
+  - bcrypt (for password encryption)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend:**
+  - Next.js (React framework)
+  - TypeScript
+  - Tailwind CSS (for styling)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Database:**
+  - MongoDB
